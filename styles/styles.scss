@@ -43,6 +43,17 @@ nav {
     .nav {
       ul {
         height: 100%;
+        .mobile {
+          display: none;
+          color: white;
+          padding-right: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+          .mobile {
+            display: inline-block;
+          }
+        }
         li {
           display: inline;
           line-height: 40px;
@@ -51,6 +62,63 @@ nav {
             text-decoration: none;
             color: #{$color-white};
           }
+
+          @media screen and (max-width: 700px) {
+            a {
+              display: none;
+            }
+            .mobile {
+              display: inline-block;
+              color: white;
+            }
+          }
+
+          .viewapp {
+            border: 2px solid #{$color-white};
+            background: #000;
+            background-size: cover;
+            background-position-y: 0px;
+            padding: 15px;
+            transition: 0.5s;
+            border-radius: 30px;
+            &:hover {
+              background-image: linear-gradient(0deg, red, #{$bg-orange});
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav__mobile {
+  position: fixed;
+  top: 0px;
+  background: brown;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .nav {
+    ul {
+      text-align: center;
+      li {
+        margin: 2vw 0pc;
+        list-style-type: none;
+        a {
+          color: #{$color-white};
+          text-decoration: none;
+        }
+
+        .viewapp {
+          border: 2px solid #{$black-background};
+          background: #{$white-bg};
+          color: #000;
+          padding: 10px 25px;
+          border-radius: 20px;
         }
       }
     }

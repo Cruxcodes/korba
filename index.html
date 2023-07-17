@@ -15,14 +15,27 @@
         <div class="nav">
           <ul>
             <li><a href="javascript:void(0)">Features</a></li>
-            <li><a href="javascript:void(0)">Features</a></li>
-            <li><a href="javascript:void(0)">Features</a></li>
-            <li><a href="javascript:void(0)">Features</a></li>
+            <li><a href="javascript:void(0)">Pricing</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+            <li><a href="javascript:void(0)">Company</a></li>
             <li><a href="javascript:void(0)" class="viewapp">View App</a></li>
           </ul>
         </div>
+        div
       </main>
     </nav>
+    <!-- <div class="nav__mobile">
+      <div class="nav">
+
+          <ul>
+            <li><a href="javascript:void(0)">Features</a></li>
+            <li><a href="javascript:void(0)">Pricing</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+            <li><a href="javascript:void(0)">Company</a></li>
+            <li><a href="javascript:void(0)" class="viewapp">View App</a></li>
+          </ul>
+        </div>
+    </div> -->
 
     <header class="header container">
       <div class="header__info">
@@ -191,5 +204,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let nav_display = document.getElementsByClassName("li.mobile");
+
+      console.log(nav_display)
+      nav_display.addEventListener("click", () => {
+        console.log("hi");
+      });
+
+    </script>
   </body>
 </html>
